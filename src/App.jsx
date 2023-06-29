@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import './App.css'
-import AppLayout from './pages/AppLayout.jsx';
-import Home from './pages/Home.jsx'
-import Header from './component/Header.jsx'
-import Footer from './component/Footer.jsx';
-import Product from './pages/Product.jsx'
-import SingleProduct from './pages/SingleProduct.jsx';
+import Header from './components/Header'
+import Footer from './components/Footer'
+import AppLayout from './pages/AppLayout'
+import Home from './pages/Home'
+import Products from './pages/Products'
+import SingleProduct from './pages/SingleProduct'
 import Cart from './pages/Cart.jsx'
 
 
@@ -25,7 +25,7 @@ function App() {
                 <Home />
           } />
            <Route path="/product" element={
-               <Product />
+               <Products />
            } 
            />
            <Route path="/products/:productId" element={
